@@ -158,7 +158,7 @@
                 <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
             </div>
             <p class="port-text">
-                Here is some of my recent work  
+                Here is some of my recent group work. Please hover above the image to get Project source.
             </p>    
             <div class="portfolios">
                 <div class="portfolio-item">
@@ -256,22 +256,30 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="" method="get" class="contact-form">
+                        <form action="" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
+                                <input type="text" id="name" name="name" required placeholder="YOUR NAME">
+                                <input type="email" id="email" name="email" required placeholder="YOUR EMAIL">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
+                                <input type="text" id="subject" name="subject" required placeholder="ENTER SUBJECT">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                                <textarea name="message" id="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
                             </div>
-                            <div class="submit-btn">
-                                <a href="#" class="main-btn">
-                                    <span class="btn-text">Submit</span>
-                                    <span class="btn-icon"><i class="fa fa-paper-plane"></i></span>
-                                </a>
+                            <div class="contact-btns">
+                                <div class="submit-btn">
+                                    <a href="#" class="main-btn">
+                                        <span class="btn-text">Submit</span>
+                                        <span class="btn-icon"><i class="fa fa-paper-plane"></i></span>
+                                    </a>
+                                </div>
+                                <div class="reset-btn">
+                                    <a href="#" class="main-btn">
+                                        <span class="btn-text">Reset</span>
+                                        <span class="btn-icon"><i class="fas fa-undo"></i></span>
+                                    </a>
+                                </div>
                             </div>
                         </form>
                     </div>

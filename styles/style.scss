@@ -587,10 +587,19 @@ section{
                 margin-left: 1.5rem;
             }
         }
-        .submit-btn{
-            display: flex;
-            justify-content: flex-start;
+        .contact-btns{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            .submit-btn{
+                display: flex;
+                justify-content: flex-start;
+            }
+            .reset-btn{
+                display: flex;
+                justify-content: flex-start;
+            }
         }
+
     }
 }
 

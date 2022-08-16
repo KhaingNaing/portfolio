@@ -46,6 +46,25 @@ function PageTransitions(){
         let element = document.body;
         element.classList.toggle('light-mode');
     })
+
+    const submitBtn = document.querySelector('.submit-btn');
+    const form = document.querySelector('.contact-form')
+    submitBtn.addEventListener('click', () => {
+        console.log("HEYYYYYY");
+        console.log(form.elements['name'].value);
+        console.log(form.elements['email'].value);
+        console.log(form.elements['subject'].value);
+        console.log(form.elements['message'].value);
+        //form.submit();
+    })
+
+    const resetBtn = document.querySelector('.reset-btn');
+    resetBtn.addEventListener('click', ()=> {
+        form.elements['name'].value="";
+        form.elements['email'].value="";
+        form.elements['subject'].value="";
+        form.elements['message'].value="";
+    })
 }
 
 // Call the function

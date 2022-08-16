@@ -600,7 +600,15 @@ section {
 .contact-content-container .right-contact .i-c-2 :last-child {
   margin-left: 1.5rem;
 }
-.contact-content-container .right-contact .submit-btn {
+.contact-content-container .right-contact .contact-btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.contact-content-container .right-contact .contact-btns .submit-btn {
+  display: flex;
+  justify-content: flex-start;
+}
+.contact-content-container .right-contact .contact-btns .reset-btn {
   display: flex;
   justify-content: flex-start;
 }
