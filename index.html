@@ -285,6 +285,33 @@
                             </div>
                         </form>
                     </div>
+                    <script src="https://smtpjs.com/v3/smtp.js"></script>
+                    <script type="text/javascript">
+                        const submitBtn = document.querySelector('.submit-btn');
+                        const form = document.querySelector('.contact-form');
+                        submitBtn.addEventListener('click', () => {
+                            console.log("HEYYYYYY");
+                            console.log(form.elements['name'].value)
+                            var formName = form.elements['name'].value;
+                            var formMail = form.elements['email'].value;
+                            var formSubject = form.elements['subject'].value;
+                            var formMessage = form.elements['message'].value;
+                            console.log(formName, formMail, formSubject, formMessage);
+                            formBody = "Name: " + formName + "<br/> email: "+formMail+"<br/> subject "+subject+"<br/> Message "+message;
+                            src = "https://smtpjs.com/v3/smtp.js";
+                            Email.send({
+                                Host: "smtp.gmail.com",
+                                Username: "khaingportfolio@gmail.com",
+                                Password: "",
+                                To: "khaingportfolio@gmail.com",
+                                From: formMail,
+                                Subject: formSubject,
+                                Body: formBody
+                            }).then(
+                                message => alert(message)
+                            );
+                        })
+                    </script> 
                 </div>
             </div>
         </section>
